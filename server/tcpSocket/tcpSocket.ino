@@ -98,14 +98,14 @@ char character;
   }
 
 
-String ending=":"
-  client.print(accMsg+rotMsg+tempMsg+space+content+space+distance+ending);  
-    while (client.available() > 0)
-    {
-        char c = client.read();
-//        Serial.write(c);
-    }
-    delay(10);
+String ending=":";
+  client.println(space+accMsg+rotMsg+tempMsg+space+content+space+distance);  
+//    while (client.available() > 0)
+//    {
+//        char c = client.read();
+////        Serial.write(c);
+//    }
+    delay(30);
 //    client.stop();
 //    ==delay(5000);
 }
